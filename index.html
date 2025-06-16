@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Font Awesome 4.7 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <title>Rohit Poudel || AI/ML Engineer</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- Header & Navigation -->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <img src="img/logo.png" alt="Logo" width="30" height="24">
+        Er.Rohit Poudel
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+  <div id="particles-js"></div>
+  <div class="container text-center text-light home-content">
+    <h1 class="wow fadeInUp" data-wow-delay="0.3s">Hi, I'm Rohit Poudel</h1>
+    <h2 class="wow fadeInUp" data-wow-delay="0.6s">AI/ML Engineer</h2>
+    <p id="tagline" class="wow fadeInUp glowPulse" data-wow-delay="0.9s">Welcome to my website.</p>
+   <a href="#Resume" id="Learn-more" class="wow fadeInUp" data-wow-delay="1.2s">
+
+  <i class="fa fa-angle-down"></i> Learn More
+</a>
+
+  </div>
+</section>
+
+<!-- Other Sections -->
+<section id="Resume">
+  <div class="container">
+<div class="row">
+  <h2 class="title mt-5">Myself Rohit Poudel</h2>
+  <p class="about">Passionate AI/ML Engineer with hands-on experience in designing, developing, and deploying scalable machine learning models to solve real-world problems.</p>
+</div>
+
+   <div class="row">
+  <div class="col-md-4">
+    <div class="card" style="min-width: 18rem;">
+      <img src="img/Coding.jpg" class="card-img-top" alt="Programming">
+      <div class="card-body">
+        <h5 class="card-title">Programming</h5>
+        <p class="card-text">I am passionate about programming in Python, using its versatile tools to build effective and reliable solutions that address complex challenges.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card" style="min-width: 18rem;">
+      <img src="img/Perspectives.jpg" class="card-img-top" alt="Training">
+      <div class="card-body">
+        <h5 class="card-title">Training ML modules</h5>
+        <p class="card-text">Skilled Machine Learning Engineer with hands-on experience in developing, training, and optimizing ML models to solve complex real-world problems.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card" style="min-width: 18rem;">
+      <img src="img/app.jpg" class="card-img-top" alt="App Development">
+      <div class="card-body">
+        <h5 class="card-title">App Development</h5>
+        <p class="card-text">Proficient Android App Developer specializing in Flutter, with experience building high-performance, cross-platform mobile applications with clean UI and efficient backend integration.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<!-- Add garnu baaki cha -->
+<section id="Portfolio"></section> 
+<div class="container">
+  <div class="row">
+    <h2 class="text-center w-100">My Projects</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="grid">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="Contact">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center w-100">Feel free to Contact me!</h2>
+    </div>
+ <div class="row">
+ <form action="https://formspree.io/f/xdkzekak" method="POST">
+
+  <div class="form-row">
+    <input type="text" name="name" class="form-contact" placeholder="Enter your Name.." required>
+    <input type="email" name="email" class="form-contact" placeholder="Enter your Email.." required>
+  </div>
+
+  <textarea class="form-control" name="message" rows="4" placeholder="Send me a message" required></textarea>
+
+  <button type="submit" class="btn btn-block submit-message">Submit</button>
+  <script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        alert("Thanks for your message!");
+        form.reset();
+      } else {
+        alert("Oops! There was a problem submitting your form.");
+      }
+    });
+  });
+</script>
+</form>
+
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color: #222; color: white; padding: 30px 0;">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+
+      <!-- Contact Info -->
+      <div class="col-md-5 mb-3 mb-md-0">
+        <ul style="list-style: none; padding-left: 0;">
+          <li><strong>Email:</strong> <a href="mailto:it.rohit9019@gmail.com" style="color: #fff;">it.rohit9019@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+9779825759019" style="color: #fff;">+977 9825759019</a></li>
+        </ul>
+      </div>
+
+      <!-- Back to Top -->
+      <div class="col-md-2 text-center mb-3 mb-md-0">
+        <a href="#home" class="back-to-top" style="color: #fff; font-size: 24px;">
+          <i class="fa fa-arrow-circle-up"></i>
+        </a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="col-md-5 text-md-end text-center">
+        <ul style="list-style: none; padding-left: 0; margin: 0;">
+          <li style="display: inline-block; margin: 0 10px;">
+            <a href="https://www.facebook.com/rohit.chhetri.98051" target="_blank" style="color: #fff; font-size: 20px;">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li style="display: inline-block; margin: 0 10px;">
+            <a href="https://www.instagram.com/rohit_chhetri0115/" target="_blank" style="color: #fff; font-size: 20px;">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li style="display: inline-block; margin: 0 10px;">
+            <a href="https://www.linkedin.com/in/rohit-it-75188936a/" target="_blank" style="color: #fff; font-size: 20px;">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </li>
+          <li style="display: inline-block; margin: 0 10px;">
+            <a href="https://github.com/Rohit90-IT" target="_blank" style="color: #fff; font-size: 20px;">
+              <i class="fa fa-github-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS Libraries -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- WOW.js Init -->
+<script>
+  new WOW().init();
+</script>
+</body>
+</html>

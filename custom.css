@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #1C1C1C;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #111 !important;
+}
+
+.navbar a {
+  color: #ffffff !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* Home Section */
+#home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2A2A2A;
+  z-index: 0;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  color: #39FF14; /* Futuristic neon green */
+}
+
+/* Animate.css delay helper (if needed) */
+[data-wow-delay] {
+  visibility: hidden;
+}
+.glowPulse {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpGlowBlueSoft 2s ease forwards;
+  animation-delay: 0.9s;
+  color: #FF6F61;
+  font-weight: 600;
+  text-shadow:
+    0 0 2px #1E90FF,
+    0 0 4px #1E90FF;
+}
+
+@keyframes fadeUpGlowBlueSoft {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    text-shadow: 0 0 2px #104E8B;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow:
+      0 0 6px #1E90FF,
+      0 0 8px #1E90FF;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow:
+      0 0 3px #1E90FF,
+      0 0 5px #1E90FF;
+  }
+}
+#Learn-more {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FF6F61; /* coral */
+  border: 2px solid #FF6F61;
+  border-radius: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.6);
+  
+  /* Animation initial state */
+  opacity: 0;
+  transform: translateY(20px);
+  
+  /* Animate with forwards fill to stay visible */
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1.2s;
+}
+
+/* WOW.js fadeInUp animation override */
+.wow.fadeInUp#Learn-more {
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+}
+
+/* Hover effect */
+#Learn-more:hover,
+#Learn-more:focus {
+  background-color: #FF6F61;
+  color: #1C1C1C;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(255, 111, 97, 0.8);
+  outline: none;
+}
+
+}
+
+/* Contact Section Styling */
+#Contact {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#Contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Form layout */
+#Contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input & textarea styling */
+.form-contact, .form-control {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 2px solid #4ca1af;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  font-weight: 500;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.15);
+}
+
+.form-contact::placeholder,
+.form-control::placeholder {
+  color: #d1e8e2;
+  font-style: italic;
+}
+
+.form-contact:focus, .form-control:focus {
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+  box-shadow: 0 0 10px #4ca1af;
+}
+
+/* Contact Section Styling */
+#Contact {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  padding: 60px 20px;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+#Contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Form layout */
+#Contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* increased gap for more padding between inputs */
+}
+
+/* Input & textarea styling */
+.form-contact, .form-control {
+  width: 100%;
+  padding: 18px 20px; /* more padding inside inputs */
+  border-radius: 8px;
+  border: 2px solid #4ca1af;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  font-weight: 500;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.15);
+}
+
+.form-contact::placeholder,
+.form-control::placeholder {
+  color: #d1e8e2;
+  font-style: italic;
+}
+
+.form-contact:focus, .form-control:focus {
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+  box-shadow: 0 0 10px #4ca1af;
+}
+
+#Contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Container for Name and Email inputs side by side */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Each input inside .form-row takes equal width */
+.form-row input.form-contact {
+  flex: 1;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: 2px solid #4ca1af;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.15);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.form-row input.form-contact::placeholder {
+  color: #d1e8e2;
+  font-style: italic;
+}
+
+.form-row input.form-contact:focus {
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+  box-shadow: 0 0 10px #4ca1af;
+}
+
+/* Message textarea takes full width */
+textarea.form-control {
+  width: 100%;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: 2px solid #4ca1af;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.15);
+  transition: background 0.3s ease, border-color 0.3s ease;
+  resize: vertical;
+}
+
+textarea.form-control::placeholder {
+  color: #d1e8e2;
+  font-style: italic;
+}
+
+textarea.form-control:focus {
+  outline: none;
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+  box-shadow: 0 0 10px #4ca1af;
+}
+
+/* Submit button styling remains same */
+.submit-message {
+  background: #4ca1af;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(76,161,175,0.6);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-top: 20px;
+}
+
+.submit-message:hover {
+  background: #3a8c9f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(58,140,159,0.8);
+}
+
+.submit-message:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 9px rgba(58,140,159,0.6);
+}
+
+/* Responsive: stack inputs vertically on small screens */
+@media (max-width: 576px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer ul li a {
+  color: #fff; /* Or any visible color */
+  font-size: 20px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.form-popup-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  animation: popin 0.3s ease;
+}
+
+#form-popup-close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes popin {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
